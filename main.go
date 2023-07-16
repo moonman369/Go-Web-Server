@@ -26,7 +26,7 @@ func helloHandler(w http.ResponseWriter, r *http.Request) {
 		http.Error(w, "Method is not allowed by the server", http.StatusMethodNotAllowed)
 		return
 	}
-	fmt.Fprint(w, "Hello Gophers!!")
+	fmt.Fprint(w, "<html><body><h1>Hello Gophers!!<h1></body></html>")
 }
 
 func main() {
@@ -36,7 +36,7 @@ func main() {
 	http.HandleFunc("/hello", helloHandler)
 
 	fmt.Println("Starting GO server at port 8080")
-	if err := http.ListenAndServe(":8080", nil); err != nil {
+	if err := http.ListenAndServe("0.0.0.0:8080", nil); err != nil {
 		log.Fatal(err)
 	}
 }
