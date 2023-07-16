@@ -13,8 +13,10 @@ func formHandler(w http.ResponseWriter, r *http.Request) {
 	}
 	fmt.Fprintf(w, "POST request successful")
 	name, address := r.FormValue("name"), r.FormValue("address")
+	fmt.Print("<html><body><p>")
 	fmt.Fprintf(w, "Name = %v\n", name)
 	fmt.Fprintf(w, "Address = %v\n", address)
+	fmt.Print("</p></body></html>")
 }
 
 func helloHandler(w http.ResponseWriter, r *http.Request) {
