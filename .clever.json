@@ -1,0 +1,11 @@
+{
+  "apps": [
+    {
+      "app_id": "app_6a9361a3-12ce-408a-b8f8-593e4832479b",
+      "org_id": "user_db5bcaf3-69a0-4e9a-b717-f188501a0eb9",
+      "deploy_url": "https://push-n1-mtl-clevercloud-customers.services.clever-cloud.com/app_6a9361a3-12ce-408a-b8f8-593e4832479b.git",
+      "name": "go-web-server",
+      "alias": "go-web-server"
+    }
+  ]
+}
